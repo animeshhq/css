@@ -31,10 +31,23 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     max-width: 1200px;
-    gap: 20px;
+    gap: 60px;
     margin: 0 auto;
 }
 
-.grid-container > div:nth-child(1) {
+.featured {
     grid-column: span 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+@media screen and (max-width: 980px) {
+    div {
+        grid-column: span 3;
+        display: grid;
+        gap: 60px;
+        align-items: center;
+    }
 }
