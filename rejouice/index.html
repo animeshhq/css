@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Flight Operations Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <h1>Global Flight Operations</h1>
+    <div class="stats">
+      <span id="totalFlights">0</span> Flights
+      <span id="delayedFlights">0</span> Delayed
+      <span id="cancelledFlights">0</span> Cancelled
+    </div>
+  </header>
+
+  <section class="controls">
+    <form id="flightForm">
+      <input placeholder="Flight No" required />
+      <input placeholder="From" required />
+      <input placeholder="To" required />
+      <input placeholder="Gate" required />
+      <input type="number" placeholder="Departure (min)" required />
+      <button type="submit">Add Flight</button>
+    </form>
+
+    <input id="search" placeholder="Search flights" />
+    <button id="disruption">Trigger Weather Disruption</button>
+  </section>
+
+  <section class="flight-board" id="flightBoard"></section>
+
+  <script src="script.js"></script>
+</body>
+</html>
